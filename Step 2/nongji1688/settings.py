@@ -41,6 +41,7 @@ ITEM_PIPELINES = {
 HEADER = {
 	# delete the code below and write the header found in browser, Network
 	'''
+	# example
 	"Host": "www.zhihu.com",
 	"Connection": "keep-alive",
 	"Cache-Control": "max-age=0",
@@ -55,6 +56,7 @@ HEADER = {
 COOKIES = {
 	# delete the code below and write the cookie found in broswer, Network
 	'''
+	# example
 	'checkcode':r'"$2a$10$9FVE.1nXJKq/F.nH62OhCevrCqs4skby2bC4IO6VPJITlc7Sh.NZa"',
 	'c_c':r'a153f80493f411e3801452540a3121f7',
 	'_ga':r'GA1.2.1063404131.1384259893',

@@ -29,7 +29,7 @@ class Nongji1688Spider(Spider):
 			yield item
 
 		# loop through the other pages 1 ... 1000
-		for id in range(2, 4):
+		for id in range(2, 10):
 		 	id = "http://www.1688.com/chanpin/-C5A9BBFAC5E4BCFE.html?spm=a261b.2187593.1996074689.2.cPWaDw&beginPage=" + str(id)
 		 	yield Request(id, callback=self.parse)
 

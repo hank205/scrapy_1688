@@ -22,6 +22,10 @@ class Nongji1688Pipeline(object):
 
 		self.file.write(line.decode("unicode_escape"))
 
+		return item
+
+
+	def __del__(self):
 		# delete duplicated lines
 		lines_seen = set() 
 		outfile = open("urls.json", "w")
@@ -31,4 +35,7 @@ class Nongji1688Pipeline(object):
 		        lines_seen.add(line)
 		outfile.close()
 
-		return item
+		import os
+		if os.path.exists('urls(redundant).json'):
+			os.remove('urls(redundant).json')
+
